@@ -1,0 +1,19 @@
+.container {
+  max-width: 24.375rem;
+  width: calc(100% - 2rem * 2);
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 39.1875rem) {
+  .container {
+    max-width: 39.1875rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+}
