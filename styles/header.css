@@ -4,7 +4,7 @@ header {
   align-items: center;
 
   & .logo {
-    padding: 1.5625rem 0 3.875rem;
+    padding-top: 1.5625rem ;
   }
 
   & .status-bar {

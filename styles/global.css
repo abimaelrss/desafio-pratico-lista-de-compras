@@ -27,3 +27,14 @@
   --text-link: 500 0.875rem var(--font-family);
 }
 
+body {
+  background-color: var(--background-primary);
+}
+
+button.back {
+  border: none;
+  font: var(--text-link);
+  color: var(--color-brand);
+
+  margin: 2.125rem 0 1rem;
+}
