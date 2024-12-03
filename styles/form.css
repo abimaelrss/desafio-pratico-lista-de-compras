@@ -33,6 +33,7 @@ fieldset {
       }
 
       &:focus {
+        border: 2px solid transparent;
         outline: 2px solid var(--color-brand);
         color: var(--content-primary);
       }
@@ -77,8 +78,8 @@ fieldset {
 
       & input[type="checkbox"] {
         all: unset;
-        width: 1rem;
-        height: 1rem;
+        width: 1.125rem;
+        height: 1.125rem;
 
         background: url(../assets/check-default.svg) no-repeat;
 
@@ -97,6 +98,9 @@ fieldset {
         width: 1rem;
         height: 1rem;
         margin-left: auto;
+
+        background-color: transparent;
+
       }
     }
   }
