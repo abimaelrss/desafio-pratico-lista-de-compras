@@ -1,0 +1,50 @@
+fieldset {
+  border: none;
+
+  & legend {
+    font: var(--text-title);
+    color: var(--content-primary);
+
+    margin-bottom: 2.75rem;
+  }
+
+  & .add {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & input {
+      width: 100%;
+      height: 2.75rem;
+
+      padding: 0 1.125rem;
+
+      border-radius: 0.75rem;
+    }
+
+    & input[type="text"] {
+      font: var(--text-paragraph);
+      color: var(--content-tertiary);
+      border: 2px solid var(--border-primary);
+      background-color: var(--background-secondary);
+    }
+
+    & input[type="submit"] {
+      color: var(--always-white);
+      background-color: var(--color-brand);
+
+      font: var(--text-label);
+
+      border: none;
+
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media (width >= 39.1875rem) {
+  fieldset .add {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
