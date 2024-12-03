@@ -103,8 +103,14 @@ fieldset {
 }
 
 @media (width >= 39.1875rem) {
-  fieldset .add {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+  fieldset {
+    .add {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    & ul li {
+      padding: .5rem 0.75rem;
+    }
   }
 }

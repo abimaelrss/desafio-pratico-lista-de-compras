@@ -1,0 +1,20 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+
+  padding: 0.75rem;
+
+  margin-bottom: 10.625rem;
+
+  font: var(--text-label);
+  line-height: 20px;
+  color: var(--always-white);
+  border-radius: 0.75rem;
+  background-color: var(--color-danger);
+
+  & span + img {
+    margin-left: auto;
+  }
+}
