@@ -40,50 +40,60 @@
       <fieldset>
         <legend>Compras da semana</legend>
 
-        <form action="">
+        <form>
           <div class="add">
-            <input type="text" placeholder="Adicione um novo item" />
-            <input type="submit" value="Adicionar item" />
+            <input
+              id="newItem"
+              name="newItem"
+              type="text"
+              placeholder="Adicione um novo item"
+              required
+            />
+            <input id="buttonAction" type="submit" value="Adicionar item" />
           </div>
 
           <ul>
             <li>
               <input type="checkbox" name="check-1" id="check-1" />
               <span>Pão de forma</span>
-              <button>
-                <img src="assets/delete.svg" alt="" />
+              <button type="button">
+                <img class="delete-item" src="assets/delete.svg" alt="" />
               </button>
             </li>
             <li>
               <input type="checkbox" name="check-2" id="check-2" />
               <span>Café preto</span>
-              <button>
-                <img src="assets/delete.svg" alt="" />
+              <button type="button">
+                <img class="delete-item" src="assets/delete.svg" alt="" />
               </button>
             </li>
             <li>
               <input type="checkbox" name="check-3" id="check-3" />
               <span>Suco de laranja</span>
-              <button>
-                <img src="assets/delete.svg" alt="" />
+              <button type="button">
+                <img class="delete-item" src="assets/delete.svg" alt="" />
               </button>
             </li>
             <li>
               <input type="checkbox" name="check-4" id="check-4" />
               <span>Bolacha</span>
-              <button>
-                <img src="assets/delete.svg" alt="" />
+              <button type="button">
+                <img class="delete-item" src="assets/delete.svg" alt="" />
               </button>
             </li>
           </ul>
         </form>
       </fieldset>
 
-      <section class="alert">
-        <img src="assets/warning.svg" alt="" />
-        <span>O item foi removido da lista</span>
-        <img src="assets/delete-x.svg" alt="" />
-      </section>
+      <div id="show-alert" class="hidden">
+        <span id="alert" >
+          <img src="assets/warning.svg" alt="" />
+          O item foi removido da lista
+          <img class="close-alert" src="assets/delete-x.svg" alt="" />
+        </span>
+      </div>
     </main>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
